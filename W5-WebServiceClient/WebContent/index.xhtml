@@ -9,28 +9,45 @@
 		
 </h:head> 
 <body> 
+
+
+<div style="width:30%; margin:auto"> 
+
+	<div class="form-style-6">
+
+<h1>Enter details</h1>
+
 <h:form>
+	<h:outputLabel value="Principle" />
 	<h:inputText id="principle" value="#{calculatorBean.principle}">
 	</h:inputText>
 	
 	<br/>
+	<h:outputLabel value="Interest" />
 	<h:inputText id="interest" value="#{calculatorBean.interest}">
 	</h:inputText>
 	
 	<br/>
 	
+	<h:outputLabel value="No of Years" />
 	<h:inputText id="noofyears" value="#{calculatorBean.noofyears}">
 	</h:inputText>
 	
 	<br/>
 	
-	<h:outputLabel id="monthlyPayment" value="#{calculatorBean.monthlyPayment}">
-	</h:outputLabel>
+	
 	
 	<h:commandButton type="submit" id="calculate" value="Calculate" action="#{calculatorBean.calculate()}"
 />
 
-</h:form>
+<br/>
+<br/><br/>
+<h:outputLabel value="Monthly Payment" /> ::
+<h:outputText id="monthlyPayment" value="#{calculatorBean.monthlyPayment}">
+	</h:outputText>
 
+</h:form>
+</div>
+</div>
 </body> 
 </html>
