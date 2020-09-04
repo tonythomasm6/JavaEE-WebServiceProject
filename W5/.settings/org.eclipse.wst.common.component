@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="W5">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="W5-ejb.jar" deploy-path="/" handle="module:/resource/W5-ejb/W5-ejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="W5-common.jar" deploy-path="/lib" handle="module:/resource/W5-common/W5-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="W5-WebServiceResource.war" deploy-path="/" handle="module:/resource/W5-WebServiceResource/W5-WebServiceResource">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="W5-WebServiceClient.war" deploy-path="/" handle="module:/resource/W5-WebServiceClient/W5-WebServiceClient">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
